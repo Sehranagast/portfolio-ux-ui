@@ -52,12 +52,14 @@ Sin fondo negro, sin ocupar media página, integrado al diseño.
 bash
 git clone https://github.com/tu-usuario/tu-repo.git
 cd tu-repo
+
 2. Instalar dependencias
 npm install
-3. Ejecutar en desarrollo
+
+4. Ejecutar en desarrollo
 npm run dev
 
-4. Build para producción
+5. Build para producción
 npm run build
 npm run preview
 
