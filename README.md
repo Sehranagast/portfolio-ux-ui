@@ -1,16 +1,116 @@
-# React + Vite
+# Portfolio UX/UI — Giselle Fernandez
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un portfolio para mi pareja de **Diseño UX/UI**, desarrollado con **Vite + React** para lograr un sitio rápido, minimalista, totalmente responsivo y con un foco especial en **claridad, accesibilidad y performance**.
 
-Currently, two official plugins are available:
+Incluye:
+- Presentación profesional  
+- Proyectos navegables embebidos desde Figma  
+- Animaciones suaves y accesibles  
+- Modo claro y modo oscuro (ambos con paleta tierra legible)  
+- Diseño centrado y consistente en todas las pantallas  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Tecnologías utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Vite** — build ultra rápido  
+- **React** — componentes reutilizables  
+- **CSS puro** — sin frameworks, con variables personalizadas  
+- **IntersectionObserver** — animaciones sutiles on-scroll  
+- **Figma Embeds** — prototipos interactivos directamente en el sitio  
+- **Light / Dark Mode** con CSS variables  
+- **Diseño responsive** (mobile-first)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎨 Diseño y decisiones visuales
+
+### ✅ Paleta tierra cálida  
+Pensada para transmitir calidez y profesionalismo.  
+Funciona perfectamente en modo claro y modo oscuro.
+
+### ✅ Layout centrado  
+Todas las secciones están centradas al píxel con un `container` estable de 1200px.
+
+### ✅ Rejilla consistente  
+- Proyectos → **2 columnas (50/50)**  
+- Servicios → **3 columnas**  
+- Mobile → se apila automáticamente
+
+### ✅ Animaciones accesibles  
+- “Reveal on scroll” suave con `IntersectionObserver`  
+- Respeto a `prefers-reduced-motion`
+
+### ✅ Footer minimalista  
+Sin fondo negro, sin ocupar media página, integrado al diseño.
+
+---
+
+## 📦 Instalación y ejecución
+
+### 1. Clonar el repositorio
+bash
+git clone https://github.com/tu-usuario/tu-repo.git
+cd tu-repo
+2. Instalar dependencias
+npm install
+3. Ejecutar en desarrollo
+npm run dev
+
+4. Build para producción
+npm run build
+npm run preview
+
+🌗 Light & Dark Mode
+
+El sitio cambia entre modo claro y oscuro usando:
+
+CSS variables (:root y [data-theme="dark"])
+
+Persistencia con localStorage
+
+Botón toggle en la navbar
+
+Ambos modos mantienen:
+
+Alto contraste
+
+Colores tierra coherentes
+
+Botones siempre legibles
+
+🧩 Proyectos incluidos
+
+Los prototipos interactivos se muestran directamente desde Figma:
+
+Dashboard — UX/UI
+Diseño de tablero funcional, navegación clara y uso de métricas visuales.
+
+AdoptMe — Prototipo
+Flujo de adopción con énfasis en interacción y usabilidad.
+
+(Podés agregar más proyectos simplemente duplicando el componente FigmaEmbed.jsx.)
+
+📱 Responsive
+
+Totalmente adaptado para:
+
+Desktop
+
+Laptop
+
+Tablet
+
+Móvil
+
+Gracias al uso de una rejilla controlada (row-2 / row-3) y un container flexible.
+
+🔒 Accesibilidad
+
+Colores con ratio correcto
+
+Estados de foco visibles
+
+Animaciones opcionales (reduced motion)
+
+Elementos semánticos
