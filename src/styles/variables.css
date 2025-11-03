@@ -1,0 +1,45 @@
+/* Modo CLARO — tierra cálida */
+:root {
+  --bg: #F7F3EE;       /* crema */
+  --surface: #FFFFFF;  /* superficies */
+  --card: #FFFDF9;     /* tarjetas */
+  --text: #2E261F;     /* marrón legible */
+  --muted: #6E5B4B;    /* secundario */
+  --brand: #A86B3D;    /* terracota */
+  --accent: #7A8F63;   /* oliva */
+  --border: #E5D8C8;   /* borde cálido */
+  --ring: #B88052;
+
+  --btn-solid-bg: var(--brand);
+  --btn-solid-text: #FFF9F0;
+  --btn-solid-border: #9C6137;
+
+  --btn-outline-bg: transparent;
+  --btn-outline-text: var(--text);
+  --btn-outline-border: #D2C4B3;
+
+  color-scheme: light;
+}
+
+/* Modo OSCURO suave — nada de negro puro */
+html[data-theme="dark"] {
+  --bg: #29231E;       /* café */
+  --surface: #312A24;  /* navbar/inputs */
+  --card: #3A312A;     /* tarjetas */
+  --text: #F5EFE6;     /* crema */
+  --muted: #D4C8B8;
+  --brand: #C07B49;    /* terracota + */
+  --accent: #8AA072;   /* oliva */
+  --border: #4A4037;
+  --ring: #E1A77B;
+
+  --btn-solid-bg: var(--brand);
+  --btn-solid-text: #FFF7EE;
+  --btn-solid-border: #A86E42;
+
+  --btn-outline-bg: transparent;
+  --btn-outline-text: #F5EFE6;
+  --btn-outline-border: #5B4E44;
+
+  color-scheme: dark;
+}
